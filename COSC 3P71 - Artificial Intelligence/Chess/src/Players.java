@@ -1,0 +1,6 @@
+enum Players {
+
+    Human,
+    Computer
+
+}
