@@ -1,0 +1,105 @@
+package Lab_8_1;
+
+
+import java.util.*;
+import BasicIO.*;
+import static BasicIO.Formats.*;
+
+
+/** This class is a program to do a simple inventory control producing a report.
+  * 
+  * @author David Hughes
+  * 
+  * @version 1.0 (Oct. 2011)                                                    */
+
+public class Inventory2 {
+    
+    
+    private ASCIIDataFile    invData;     // data file for inventory info
+    private ReportPrinter    report;      // printer for report
+    
+    
+    /** The constructor opens the data file for the inventory info and sets up
+      * th printer for the report                                               */
+    
+    public Inventory2 ( ) {
+        
+        invData = new ASCIIDataFile();
+        report = new ReportPrinter();
+        
+    };  // constructor
+    
+    
+    /** This method does the day-end inventory control for a small company
+      * generating a report.                                                    */
+    
+    private void doDayEnd ( ) {
+        
+        String  itemNum;     // item number
+        int     reorder;     // reorder point
+        int     quant;       // quantity on hand
+        int     numReorder;  // number of items requiring reorder
+        
+        setUpReport();
+        numReorder = 0;
+        for ( ; ; ) {
+            itemNum = invData.readString();
+        if ( invData.isEOF() ) break;
+            reorder = invData.readInt();
+            quant = invData.readInt();
+            if ( quant <= reorder ) {
+                writeDetail(itemNum,reorder,quant);
+                numReorder = numReorder + 1;
+            };
+        };
+        writeSummary(numReorder);
+        invData.close();
+        report.close();
+        
+    };  // doDayEnd
+    
+    
+    /** This method sets up the report, adding all fields.
+      * 
+      * @param  date  date for inventory report                                 */
+    
+    private void setUpReport ( ) {
+        
+        report.setTitle("National Widgets","Restock Report");
+        report.addField("itemNum","Item #",6);
+        report.addField("reorder","Reorder Pt",10);
+        report.addField("quant","Quantity",8);
+        
+    };  // setUpReport
+    
+    
+    /** This method generates a report detail line.
+      * 
+      * @param  itemNum  item number
+      * @param  reorder  reorder point
+      * @param  quant    quantity                                               */
+    
+    private void writeDetail ( String itemNum, int reorder, int quant ) {
+        
+        report.writeString("itemNum",itemNum);
+        report.writeDouble("reorder",reorder);
+        report.writeDouble("quant",quant);
+        
+    };  // writeDetail
+    
+    
+    /** This method generates the report summary.
+      * 
+      * @param  numReorder number of items requiring reorder                     */
+    
+    private void writeSummary ( int numReorder ) {
+        
+        report.writeLine("# Items to Reorder: "+numReorder);
+        
+    };  // writeSummary
+    
+    
+    public static void main ( String[] args ) { new Inventory2().doDayEnd(); };
+    
+    
+}  // Inventory2

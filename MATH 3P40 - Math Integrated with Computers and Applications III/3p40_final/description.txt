@@ -1,0 +1,24 @@
+The included software includes 4 files:
+
+1. ffm.h
+2. fire-time_sim.cpp
+3. fire-size_sim.cpp
+4. cluster-size_sim.cpp
+
+The header file ffm.h defines the Forest object, which provide the methods for performing the simulations. The other three files are the simulations corresponding to the mean fire length simulation, the fire size distribution simulation, and the cluster size distribution simulation.
+
+All three simulations use the Forest object as defined in ffm.h.
+
+
+The programs can be compiled and executed as follows:
+
+1. g++ -Ofast fire-time_sim.cpp -o fire-time_sim
+./fire-time_sim 1> fire-times.dat
+
+2. g++ -Ofast fire-size_sim.cpp -o fire-size_sim
+./fire-size_sim 1> fire-sizes.dat
+
+3. g++ -Ofast cluster-size_sim.cpp -o cluster-size_sim
+./cluster-size_sim 1> cluster-sizes.dat
+
+The software was written and executed on a 64-bit Linux machine using GCC 6.3.1. None of the simulations execute in a timely manner.

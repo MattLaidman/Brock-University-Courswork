@@ -1,0 +1,3 @@
+package Random is
+  function Unif (X: Integer; Y: Integer; Z: Integer) return Integer;
+end Random;

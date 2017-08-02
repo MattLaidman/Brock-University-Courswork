@@ -1,0 +1,60 @@
+package LabTestPractice_F;
+
+import Media.*;                  // for displayer and turtle
+import java.awt.*;               // for Color class
+import static java.lang.Math.*;  // for math constants and functions & random
+import static Media.Turtle.*;    // for turtle speed constants
+import static java.awt.Color.*;  // for Color constants
+
+
+public class Pyramid {
+  
+  private Turtle pen;
+  private TurtleDisplayer display;
+  
+  
+  public Pyramid ( ) {  // constructor
+    
+    pen = new Turtle (FAST);
+    display = new TurtleDisplayer ();
+    display.placeTurtle (pen);
+    
+    pen.backward (125);
+    drawPyramid (100);
+    display.close ();
+    
+  };  // constructor
+  
+  
+  private void drawPyramid (int base) {
+
+    pen.penDown ();
+    
+    for (int i = 1 ; i <= 4 ; i++) {
+      pen.left (PI/6);
+      drawTriangle (base);
+      pen.forward (base);
+      if (i != 1 ) {
+        pen.right (2*PI/3);
+        pen.forward (base);
+      }
+    }
+    pen.penUp ();
+    
+  };
+  
+  
+  private void drawTriangle (int side) {
+    
+    pen.penDown ();
+    for (int i = 1 ; i <= 3 ; i++) {
+      pen.forward (side);
+      pen.right (2*PI/3);
+    }
+    pen.penUp ();
+    
+  };
+  
+  
+  public static void main ( String[] args ) {Pyramid m = new Pyramid();}
+};

@@ -1,0 +1,12 @@
+Objective
+To implement a double hashing scheme.
+The Assignment
+This assignment will allow you to implement a hash table using double hashing as a means of collision resolution. Your job is to design a table and the associated functions prior to  implementation. The data will be string and count representing the number of times the string appears in the data input. Similar to previous assignments.
+Part A.
+The following is to be word processed
+Design a table which will hold the data set. When all data is entered, the table must be greater then 80% full and less then 90%. The table will need to implement insertion, deletion and find.
+What is the size of the table? Prove it?
+What fields will the table need to represent?
+Give the logical structure of the table.
+Design a primary hash function which will distribute the keys (strings) as evenly as possible. Can you prove that the distribution adheres to the principles of good hash functions?
+Design a secondary functions which will be used in the event of a collision. Show that this function will adequately produce the desired results.

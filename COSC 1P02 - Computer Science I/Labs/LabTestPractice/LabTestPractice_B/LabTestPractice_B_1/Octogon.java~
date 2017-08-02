@@ -1,0 +1,52 @@
+package LabTestPractice_D;
+
+import Media.*;                  // for displayer and turtle
+import java.awt.*;               // for Color class
+import static java.lang.Math.*;  // for math constants and functions & random
+import static Media.Turtle.*;    // for turtle speed constants
+import static java.awt.Color.*;  // for Color constants
+
+
+public class Octogon {
+  
+  private Turtle pen;
+  private TurtleDisplayer display;
+  
+  
+  public Octogon ( ) {  // constructor
+    
+    pen = new Turtle (FAST);
+    display = new TurtleDisplayer ();
+    display.placeTurtle (pen);
+    
+    drawOctogon (100);
+    display.close ();
+    
+  };  // constructor
+  
+  
+  private void drawTriangle (int r) {
+    
+    pen.penDown ();
+    for (int i = 1 ; i <= 3 ; i++) {
+      pen.forward (r);
+      pen.right (5*PI/8);
+      pen.forward (2*r*sin(PI/8));
+      pen.right (5*PI/8);
+      pen.forward (r);
+      pen.right (PI);    
+    }
+    pen.penUp ();
+  };
+  
+  
+  private void drawOctogon (int radius) {
+    
+    for (int i = 1 ; i <= 8 ; i++) {
+      drawTriangle (100);
+    }
+  };
+  
+  
+  public static void main ( String[] args ) {Octogon m = new Octogon();}
+};

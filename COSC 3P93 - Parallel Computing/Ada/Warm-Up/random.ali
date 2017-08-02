@@ -1,0 +1,28 @@
+V "GNAT Lib v4.9"
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV SPARK_05
+
+U random%b		random.adb		ce03cbf6 NE OO PK
+
+U random%s		random.ads		aa4a607f EE NE OO PK
+
+D random.ads		20151119033545 aa4a607f
+D random.adb		20151119040446 6449ab89
+D system.ads		20150725181646 90249111
+X 1 random.ads
+1K9*Random 6l5 6e11 2|1b14 45l5 45t11
+3U13*Initialize 2|6b13 10l7 10t17
+4U13*Initialize 4>25 4>42 4>59 2|9s5 13b13 19l7 19t17
+4i25 Seed1{integer} 2|13b25 16r10
+4i42 Seed2{integer} 2|13b42 17r10
+4i59 Seed3{integer} 2|13b59 18r10
+5V12*Unif{float} 2|22b12 44l7 44t11
+X 2 random.adb
+3i3 X{integer} 16m5 26m5 26r15 26r47 27r8 28m7 28r12 38r20
+3i6 Y{integer} 17m5 30m5 30r15 30r48 31r8 32m7 32r12 38r39
+3i9 Z{integer} 18m5 34m5 34r15 34r48 35r8 36m7 36r12 38r58
+24f5 Temp{float} 38m5 39m5 39r13 39r34 40r8 41m7 41r15 41r29 43r12
+

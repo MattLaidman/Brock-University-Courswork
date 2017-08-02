@@ -1,0 +1,37 @@
+package Lab_5_1;
+
+import Media.*;                  // for Turtle and TurtleDisplayer
+import static java.lang.Math.*;  // for math valuse & functions (e.g. PI, sin)
+import java.awt.*;               // for Color class
+
+
+public class Sunset {
+    
+    
+  private Picture p;
+  private PictureDisplayer display;
+    
+    
+    public Sunset ( ) {
+        
+        display = new PictureDisplayer ();
+        p = new Picture ();
+        display.placePicture (p);
+        dimPicture();
+        display.close();
+        
+    }; // constructor
+    
+    
+    private void dimPicture ( ) {
+               
+      while (p.hasNest () == true) {
+        
+      }
+    };  // dimPicture
+    
+    
+    public static void main ( String[] args ) { Sunset f = new Sunset(); };
+    
+    
+}  // Fireworks

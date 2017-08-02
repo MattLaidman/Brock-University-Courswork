@@ -1,0 +1,42 @@
+package Lab_5_2;
+
+import Media.*;
+import static java.lang.Math.*;
+import java.awt.*;
+
+
+public class Brighten {
+    
+    
+  Picture p;
+  PictureDisplayer display;
+    
+    public Brighten ( ) {
+        
+        display = new PictureDisplayer ();
+        p = new Picture ();
+        display.placePicture (p);
+        brightenPicture();
+        display.close();
+        
+    };
+    
+    
+    private void brightenPicture ( ) {
+      
+      Pixel x;
+      
+      while (p.hasNext ()) {
+        x = p.next ();
+        x.setRed ((int)(x.getRed ()*2));
+        x.setGreen ((int)(x.getGreen ()*2));
+        x.setBlue ((int)(x.getBlue ()*2));
+      }
+      
+    };  // BrightenPicture
+    
+    
+    public static void main ( String[] args ) { Brighten s = new Brighten(); };
+    
+    
+}  // Brighten

@@ -1,0 +1,51 @@
+V "GNAT Lib v4.9"
+M P W=b
+P SS ZX
+
+RN
+
+U doreset%b		doreset.adb		6e6d1567 NE OO SU
+W torusreset%s		torusreset.adb		torusreset.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-reatim.ads		20090409150019 63f07669
+D a-unccon.ads		20070406091342 f9eb8f06
+D doreset.adb		20151123003640 dd954377
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D random.ads		20151123003637 aa4a607f
+D system.ads		20150725181646 90249111
+D s-atacco.ads		20120515093410 4c36d12f
+D s-exctab.ads		20140225151139 54135002
+D s-imguns.ads		20090409150019 9ff43cf7
+D s-linux.ads		20140409145429 5b2f79a5
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20150725181656 a445b120
+D s-osinte.ads		20140409145429 59011f13
+D s-parame.ads		20140225151139 ab8cb46a
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-tasinf.ads		20120730151500 21316953
+D s-taspri.ads		20110927094500 15f617a8
+D s-taprop.ads		20111212143339 1dd2e1b6
+D s-taskin.ads		20140131154341 3f821f32
+D s-tassta.ads		20121029110946 70812003
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D torus.ads		20151123003636 541025d6
+D torusreset.ads	20151123003632 b3f85610
+X 5 doreset.adb
+4U11*DoReset 4b11 7l5 7t12
+X 21 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 33 torusreset.ads
+3K9*TorusReset 5|1w6 6r3 33|10e15
+5U13*TorusReset 5|6s14
+

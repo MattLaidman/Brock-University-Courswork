@@ -1,0 +1,4 @@
+Ima Brilliant	75.00	0.05	120	15
+Douglas Knuth	125.00	0.06	200	10
+Joe Author	65.00	0.05	25	35
+Fred Flintstone	100.00	0.02	300	200

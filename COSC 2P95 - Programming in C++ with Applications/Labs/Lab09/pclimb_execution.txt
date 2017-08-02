@@ -1,0 +1,28 @@
+matt@arch-asus ~/D/2P95_Lab-9> g++ -g -Wall -Wpedantic -pthread -o pclimb parallel-climbing.cpp
+matt@arch-asus ~/D/2P95_Lab-9> ./pclimb 
+Number of climbers ([0..8], 0 to quit): 8
+
+Climbing!
+
+Minimum found so far: z = -963.563
+(x = 495.816, y = 426.48)
+
+Minimum found so far: z = -963.58
+(x = 495.558, y = 426.293)
+^C
+Minimum found so far: z = -963.58
+(x = 495.558, y = 426.293)
+
+Number of climbers ([0..8], 0 to quit): 9
+Number of climbers ([0..8], 0 to quit): 4
+
+Climbing!
+
+Minimum found so far: z = -963.58
+(x = 495.558, y = 426.293)
+^C
+Minimum found so far: z = -963.58
+(x = 495.558, y = 426.293)
+
+Number of climbers ([0..8], 0 to quit): 0
+matt@arch-asus ~/D/2P95_Lab-9> 

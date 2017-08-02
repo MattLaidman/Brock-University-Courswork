@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ParityCheck:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ParityCheck_jar</output-path>
+    <root id="archive" name="ParityCheck.jar">
+      <element id="module-output" name="ParityCheck" />
+    </root>
+  </artifact>
+</component>

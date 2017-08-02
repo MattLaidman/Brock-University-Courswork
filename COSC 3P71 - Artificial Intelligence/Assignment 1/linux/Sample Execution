@@ -1,0 +1,96 @@
+matt@Matt-Ubuntu:~/Desktop$ ./SampleExecution.sh
+++ java -jar ./NQueensSolve.jar
+Usage:
+
+- java -jar NQueensSolve M [Options]
+
+  - M (Mode): 0 or 1
+    - 0: Blind Search
+    - 1: Informed Search
+  - Options:
+    - M = 0:
+      - Optional: 0 or 1
+        - 0: false - print only first solution (default)
+        - 1: true - print all solutions
+    - M = 1:
+      - Optional: long integer seed
+        - If no seed given, 34567 is used
+
+Example:
+
+- java -jar NQueensSolve 0 0
+- java -jar NQueensSolve 1 76543
+++ java -jar ./NQueensSolve.jar 4 0
+
+  Y 0   1   2   3
+X  ---------------
+0 |   |   | Q |   |
+   ---------------
+1 | Q |   |   |   |
+   ---------------
+2 |   |   |   | Q |
+   ---------------
+3 |   | Q |   |   |
+   ---------------
+Total number of configurations tested: 138
+Seed used for random number generator: N/A (Blind Search)
+++ java -jar ./NQueensSolve.jar 4 1
+
+  Y 0   1   2   3
+X  ---------------
+0 |   | Q |   |   |
+   ---------------
+1 |   |   |   | Q |
+   ---------------
+2 | Q |   |   |   |
+   ---------------
+3 |   |   | Q |   |
+   ---------------
+Total number of configurations tested: 17
+Seed used for random number generator: 34567
+++ java -jar ./NQueensSolve.jar 8 0
+
+  Y 0   1   2   3   4   5   6   7
+X  -------------------------------
+0 | Q |   |   |   |   |   |   |   |
+   -------------------------------
+1 |   |   |   |   |   |   | Q |   |
+   -------------------------------
+2 |   |   |   |   | Q |   |   |   |
+   -------------------------------
+3 |   |   |   |   |   |   |   | Q |
+   -------------------------------
+4 |   | Q |   |   |   |   |   |   |
+   -------------------------------
+5 |   |   |   | Q |   |   |   |   |
+   -------------------------------
+6 |   |   |   |   |   | Q |   |   |
+   -------------------------------
+7 |   |   | Q |   |   |   |   |   |
+   -------------------------------
+Total number of configurations tested: 1342059
+Seed used for random number generator: N/A (Blind Search)
+++ java -jar ./NQueensSolve.jar 8 1 76543
+
+  Y 0   1   2   3   4   5   6   7
+X  -------------------------------
+0 |   |   |   |   |   | Q |   |   |
+   -------------------------------
+1 |   |   | Q |   |   |   |   |   |
+   -------------------------------
+2 |   |   |   |   | Q |   |   |   |
+   -------------------------------
+3 |   |   |   |   |   |   | Q |   |
+   -------------------------------
+4 | Q |   |   |   |   |   |   |   |
+   -------------------------------
+5 |   |   |   | Q |   |   |   |   |
+   -------------------------------
+6 |   | Q |   |   |   |   |   |   |
+   -------------------------------
+7 |   |   |   |   |   |   |   | Q |
+   -------------------------------
+Total number of configurations tested: 625
+Seed used for random number generator: 76543
+matt@Matt-Ubuntu:~/Desktop$ 
+

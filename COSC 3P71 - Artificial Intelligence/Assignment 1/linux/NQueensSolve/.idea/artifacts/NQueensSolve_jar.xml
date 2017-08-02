@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="NQueensSolve:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NQueensSolve_jar</output-path>
+    <root id="root">
+      <element id="archive" name="NQueensSolve.jar">
+        <element id="module-output" name="NQueensSolve" />
+        <element id="dir-copy" path="$PROJECT_DIR$/src" />
+      </element>
+    </root>
+  </artifact>
+</component>

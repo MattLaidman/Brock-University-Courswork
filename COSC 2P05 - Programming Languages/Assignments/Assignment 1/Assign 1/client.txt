@@ -1,0 +1,6 @@
+1111	1234	5
+s	1111	savings	800
+s	1112	vacation	200
+c	1113	chequing	500
+i	1114	investment	2500
+x	1115	student	1000

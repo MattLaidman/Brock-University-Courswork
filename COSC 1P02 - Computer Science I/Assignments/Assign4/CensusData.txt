@@ -1,0 +1,26 @@
+123 Fourth St. 2 George 45 0 0
+
+123 Fourth St. 2 Mabel 40 1 1
+
+125 Fourth St. 3 Fred 33 0 2
+
+125 Fourth St. 3 Betty 30 1 0
+
+125 Fourth St. 3 Baby 2 1 0
+
+128 Fourth St. 1 Lonely 75 0 2
+
+126 Fourth St. 5 Father 40 0 1
+
+126 Fourth St. 5 Mother 38 1 1
+
+126 Fourth St. 5 Daughter 17 1 1
+
+126 Fourth St. 5 Son 14 0 1
+
+126 Fourth St. 5 Grandmother 62 1 1
+
+124 Fourth St. 2 Charles 92 0 0
+
+124 Fourth St. 2 Ada 82 1 0
+

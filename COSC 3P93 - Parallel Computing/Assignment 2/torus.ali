@@ -1,0 +1,171 @@
+V "GNAT Lib v4.9"
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_LOOPS
+RV NO_SECONDARY_STACK
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=3
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=61
+
+U torus%b		torus.adb		80c45da6 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U torus%s		torus.ads		541025d6 EE OO PK
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.img_uns%s	s-imguns.adb		s-imguns.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-reatim.ads		20090409150019 63f07669
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D i-cstrea.ads		20130412125801 8128536b
+D system.ads		20150725181646 90249111
+D s-atacco.ads		20120515093410 4c36d12f
+D s-conca3.ads		20140225151544 0b705ca5
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-imguns.ads		20090409150019 9ff43cf7
+D s-linux.ads		20140409145429 5b2f79a5
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20150725181656 a445b120
+D s-osinte.ads		20140409145429 59011f13
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-tasinf.ads		20120730151500 21316953
+D s-taspri.ads		20110927094500 15f617a8
+D s-taprop.ads		20111212143339 1dd2e1b6
+D s-taskin.ads		20140131154341 3f821f32
+D s-taprob.ads		20110927094500 502249e3
+D s-tpoben.ads		20121029113218 b641f948
+D s-tasren.ads		20120208100446 a67a9949
+D s-tassta.ads		20121029110946 70812003
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-wchcon.ads		20140225151139 1b7d22d2
+D torus.ads		20151123003636 541025d6
+D torus.adb		20151123003608 ecb98da4
+X 1 ada.ads
+16K9*Ada 19e8 49|1r6 1r23
+X 8 a-textio.ads
+49K13*Text_IO 471e16 49|1w10 1r27
+263U14*Put_Line 49|58s17 62s15
+X 32 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 48 torus.ads
+1K9*Torus 46l5 46e10 49|2b14 143l5 143t10
+3T13*Semaphore 7l7 7e16 9r10 49|130b13 142l7 142t16
+5Y11 Signal 49|63s20 136b16
+6Y11 Wait 49|138b37
+9t3*Done{3T13} 49|63r15
+12M8*DimX 17r9 42r18
+13M8*DimY 18r9 42r24
+14M8*DimZ 19r9 42r30
+16R8*Vector 21e13 23r12 24r10 49|9r12 10r12 74r10
+17m5*X{12M8} 49|30r37 40r60 55r28 58r54 62r52 79m8 79r20 83m8 83r20 84r49
+. 84r57 90m8 90r20 91r49 91r57 97m8 97r20
+18m5*Y{13M8} 49|30r60 40r102 55r36 58r78 62r76 80m8 80r20 98m8 98r20 99r49
+. 99r57 105m8 105r20 106r49 106r57 112m8 112r20
+19m5*Z{14M8} 49|30r83 40r144 55r44 58r102 62r100 81m8 81r20 113m8 113r20
+. 114r49 114r57 120m8 120r20 121r49 121r57
+20b5*IsReal{boolean} 49|53r21 84r17 91r17 99r17 106r17 114r17 121r17
+22R8*Request 25e13 28r52 38r23 44r35 49|7r22 20r28 72r35
+23r5*From{16R8} 49|25r34 30r32 30r55 30r78 84r12 84r44 85m38 91r12 91r44
+. 92m38 99r12 99r44 100m38 106r12 106r44 107m38 114r12 114r44 115m38 121r12
+. 121r44 122m38
+24r5*To{16R8} 49|26r34 40r57 40r99 40r141 79r17 80r17 81r17 83r17 85r50 86m38
+. 90r17 92r50 93m38 97r17 98r17 100r50 101m38 105r17 107r50 108m38 112r17
+. 113r17 115r50 116m38 120r17 122r50 123m38
+27I8*NeighbourIndex<short_short_integer> 28r33 32r13 33r12 49|76r19
+28A8*NeighbourArray(22R8)<27I8> 31r14
+30R8*ResetBuffer 34e13 44r51 49|8r18 72r51 75r18
+31a5*Buffer{28A8} 49|40r32 40r74 40r116 40m164 85m18 86m18 92m18 93m18 100m18
+. 101m18 107m18 108m18 115m18 116m18 122m18 123m18
+32i5*Front{27I8} 49|38r25 40r50 40r92 40r134 40r182 41m26 41r46
+33i5*Back{27I8} 49|28r39 38r45 88m18 88r37 95m18 95r37 103m18 103r37 110m18
+. 110r37 118m18 118r37 125m18 125r37
+36T13*Process 40l7 40e14 42r39 49|4b13 70l7 70t14
+38Y11 Reset 38>17 49|20b16 22l13 22t18 40s147
+38r17 Req{22R8} 49|21r29
+39Y11 Acknowledge 49|30s86 33b19 35l13 35t24 55s47
+42a3*Torus(36T13) 49|30r11 40r15 55r17
+44V12*ResetNeighbours{30R8} 44>29 49|27s25 72b12 128l7 128t22
+44r29 Req{22R8} 49|72b29 79r13 80r13 81r13 83r13 84r8 84r40 85r46 90r13 91r8
+. 91r40 92r46 97r13 98r13 99r8 99r40 100r46 105r13 106r8 106r40 107r46 112r13
+. 113r13 114r8 114r40 115r46 120r13 121r8 121r40 122r46
+X 49 torus.adb
+6b5 PreviouslyReset{boolean} 23r16 24m11 37r12
+7r5 CurrentRequest{48|22R8} 21m11 25r19 26r19 27r41 30r17 30r40 30r63
+8r5 Neighbours{48|30R8} 27m11 28r28 38r14 38r34 40r21 40r39 40r63 40r81 40r105
+. 40r123 40r153 40r171 41m15 41r35
+9r5 From{48|16R8} 25m11 53r16 55r23 55r31 55r39
+10r5 Self{48|16R8} 26m11 58r49 58r73 58r97 62r47 62r71 62r95
+11i5 ACount{integer} 34m11 34r21 49r64
+12i5 ASent{integer} 31m11 31r19 56m17 56r26 58r137 62r135
+13i5 RSent{integer} 28m11 49r56
+14b5 RecievedAll{boolean} 49r35 50m13 52r55
+15b5 SentAll{boolean} 45r20 46m15 49r14 52r38
+16b5 CalledBack{boolean} 52r18 57m17 64m15
+20r22 Req{48|22R8}
+74r5 To{48|16R8} 79m5 80m5 81m5 83m5 84r54 86r44 90m5 91r54 93r44 97m5 98m5
+. 99r54 101r44 105m5 106r54 108r44 112m5 113m5 114r54 116r44 120m5 121r54
+. 123r44
+75r5 Neighbours{48|30R8} 85m7 86m7 88m7 88r26 92m7 93m7 95m7 95r26 100m7
+. 101m7 103m7 103r26 107m7 108m7 110m7 110r26 115m7 116m7 118m7 118r26 122m7
+. 123m7 125m7 125r26 127r12
+76i5 BufferIndex{48|27I8} 85r25 86r25 87m7 87r22 92r25 93r25 94m7 94r22 100r25
+. 101r25 102m7 102r22 107r25 108r25 109m7 109r22 115r25 116r25 117m7 117r22
+. 122r25 123r25 124m7 124r22
+132i5 Count{integer} 137m11 137r20 138r17 139m11 139r20
+

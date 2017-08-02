@@ -1,0 +1,1 @@
+void dump (struct node *head);

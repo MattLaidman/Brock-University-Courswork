@@ -1,0 +1,136 @@
+package Assign_4;
+
+
+import java.util.*;
+import BasicIO.*;
+import static BasicIO.Formats.*;
+
+
+public class PopCensus {
+  
+  
+  private ASCIIDataFile    addresses;
+  private BasicForm        household, individual;
+  private ASCIIOutputFile  censusData;
+  private ReportPrinter    report;
+  
+  
+  public PopCensus ( ) {
+    
+    addresses = new ASCIIDataFile();
+    household = new BasicForm("OK","Skip");
+    individual = new BasicForm ("OK");
+    //censusData = new ASCIIOutputFile();
+    report = new ReportPrinter();
+    
+  };
+  
+  
+  private void takeCensus ( ) {
+    
+    int numPeaople, button;  
+    
+    household();
+    setUpReport();
+    
+    for ( ; ; ) {
+      address = address.readLine();
+      if (addresses.isEOF()) break;
+      household.writeString("address", address);
+      numPeople = readInt("people");
+      button = household.accept();
+    }
+    
+    
+    
+    
+    /*
+     totPay = 0;
+     totYTDPay = 0;
+     for ( ; ; ) {
+     anEmp = new Employee(empData);
+     if ( empData.isEOF() ) break;
+     fillForm(anEmp);
+     button = display.accept();
+     if ( button == 0 ) {
+     hours = display.readDouble("hours");
+     pay = anEmp.payForHours(hours);
+     writeDetail(anEmp,hours,pay);
+     totPay = totPay + pay;
+     totYTDPay = totYTDPay + anEmp.getYTDPay();
+     };
+     anEmp.write(newEmpData);
+     };
+     writeSummary(totPay,totYTDPay);
+     empData.close();
+     newEmpData.close();
+     display.close();
+     report.close();*/
+    
+  };
+  
+  
+  private void household ( ) {
+    
+    household.setTitle("Household");
+    household.addLabel("Address ");
+    household.addTextField("address");
+    household.setEditable("address",false);
+    household.addLabel("# People");
+    household.addTextField("people);
+    household.setEditable("people",true);
+
+    
+  };
+  
+  
+  private void fillForm ( Employee anEmployee ) {
+    
+    display.clearAll();
+    display.writeString("empNum",anEmployee.getEmpNum());
+    display.writeString("empName",anEmployee.getEmpName());
+    display.writeDouble("rate",anEmployee.getRate());
+    display.writeDouble("YTDPay",anEmployee.getYTDPay());
+    
+  };
+  
+  
+  private void setUpReport () {
+    
+    report.setTitle("Statistics Canada", "Census Report");
+    report.addField("address","Address",20);
+    report.addField("people","People",7);
+    report.addField("female","Female",7);
+    report.addField("male","Male",5);
+    report.addField("english","English",8);
+    report.addField("french","French",7);
+    report.addField("other","Other",6);
+    
+  };
+  
+  
+  private void writeDetail ( Employee anEmployee, double hours, double pay ) {
+    
+    report.writeString("empNum",anEmployee.getEmpNum());
+    report.writeString("empName",anEmployee.getEmpName());
+    report.writeDouble("rate",anEmployee.getRate());
+    report.writeDouble("hours",hours);
+    report.writeDouble("pay",pay);
+    report.writeDouble("YTDPay",anEmployee.getYTDPay());
+    
+  };
+  
+  
+  private void writeSummary ( double totPay, double totYTDPay ) {
+    
+    report.writeString("empNum","Total");
+    report.writeDouble("pay",totPay);
+    report.writeDouble("YTDPay",totYTDPay);
+    
+  };
+  
+  
+  public static void main ( String[] args ) { new PopCensus().takeCensus(); };
+  
+  
+}

@@ -1,0 +1,41 @@
+matt@arch-asus ~/D/4F00_A1> g++ -g -Wall -o r ringtest.cpp
+matt@arch-asus ~/D/4F00_A1> ./r
+Iterate through Ring of primitive types (char):
+a b c a b c 
+
+Ring size: 3
+Removing "current"!
+Ring size: 2
+Iterate backwards through same Ring:
+a b a b a b 
+
+Iterate through Ring of non-primitive types ["Person (age, height)" struct]:
+25 180
+30 185
+45 170
+25 180
+30 185
+45 170
+
+Ring size: 3
+Removing "current"!
+Ring size: 2
+Iterate backwards through same Ring:
+25 180
+30 185
+25 180
+30 185
+25 180
+30 185
+
+Calling remove current 3 times on same Ring (std::runtime_error will be thrown!):
+Ring size: 2
+Removing "current"!
+Ring size: 1
+Removing "current"!
+Ring size: 0
+Removing "current"!
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Cannot call function removeCurrent() from Ring of size 0
+fish: './r' terminated by signal SIGABRT (Abort)
+matt@arch-asus ~/D/4F00_A1> 

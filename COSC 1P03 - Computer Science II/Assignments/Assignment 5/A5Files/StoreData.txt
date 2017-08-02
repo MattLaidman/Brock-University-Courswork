@@ -1,0 +1,11 @@
+5
+1111	5.95	a cheap book
+2222	45.15	an expensive book
+3333	899.00	iPad
+4444	82.50	The C Programming Language
+5555	15.27	Flight
+4
+1234	Fred Flintstone	999 Bedrock Blvd.	fred
+2345	Frank Instien	22 Twain	frank
+3456	Mary Major	1234 First St.	minor
+4567	Sue Mie	53 Liberty St.	123456

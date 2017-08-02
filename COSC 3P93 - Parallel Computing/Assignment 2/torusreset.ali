@@ -1,0 +1,130 @@
+V "GNAT Lib v4.9"
+P SS ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U torusreset%b		torusreset.adb		8c36800e NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.concat_6%s	s-conca6.adb		s-conca6.ali
+W system.concat_8%s	s-conca8.adb		s-conca8.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_uns%s	s-imguns.adb		s-imguns.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U torusreset%s		torusreset.ads		4da213b9 EE NE OO PK
+W random%s		random.adb		random.ali
+W torus%s		torus.adb		torus.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-reatim.ads		20090409150019 63f07669
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D i-cstrea.ads		20130412125801 8128536b
+D random.ads		20151123003637 aa4a607f
+D system.ads		20150725181646 90249111
+D s-atacco.ads		20120515093410 4c36d12f
+D s-conca6.ads		20140225151544 d2c72db2
+D s-conca8.ads		20140225151544 e3074dd7
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-imguns.ads		20090409150019 9ff43cf7
+D s-linux.ads		20140409145429 5b2f79a5
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20150725181656 a445b120
+D s-osinte.ads		20140409145429 59011f13
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-tasinf.ads		20120730151500 21316953
+D s-taspri.ads		20110927094500 15f617a8
+D s-taprop.ads		20111212143339 1dd2e1b6
+D s-taskin.ads		20140131154341 3f821f32
+D s-taprob.ads		20110927094500 502249e3
+D s-tpoben.ads		20121029113218 b641f948
+D s-tasren.ads		20120208100446 a67a9949
+D s-tassta.ads		20121029110946 70812003
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-wchcon.ads		20140225151139 1b7d22d2
+D torus.ads		20151123003636 541025d6
+D torusreset.ads	20151123003632 b3f85610
+D torusreset.adb	20151123064759 07a323ca
+X 1 ada.ads
+16K9*Ada 19e8 52|1r6 1r23
+X 8 a-textio.ads
+49K13*Text_IO 471e16 52|1w10 1r27
+166U14*New_Line 52|45s5 48s5 52s5 57s5
+263U14*Put_Line 52|46s5 47s5 49s5 50s5 51s5 53s5 58s5
+X 13 random.ads
+1K9*Random 8e11 51|1w6 52|29r5 31r27 32r27 33r27
+5U13*Initialize 52|29s12
+7V12*Unif{float} 52|31s34 32s34 33s34
+X 34 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 50 torus.ads
+1K9*Torus 46e10 51|2w6 2r17 52|41r5 43r5 55r5
+6Y11 Wait 52|55s16
+9t3*Done{3T13} 52|55r11
+12M8*DimX 52|31r14 50r115 51r115 69r13
+13M8*DimY 52|32r14 50r141 51r141 70r13
+14M8*DimZ 52|33r14 50r167 51r167 71r13
+16R8*Vector 21e13 51|7r32 8r26 52|25r23 63r32 64r26 66r10
+17m5*X{12M8} 52|31m9 41r21 43r21 50r50 50r130 51r50 51r130 69m8 69r32
+18m5*Y{13M8} 52|32m9 41r28 43r28 50r73 50r156 51r73 51r156 70m8 70r32
+19m5*Z{14M8} 52|33m9 41r35 43r35 50r96 50r182 51r96 51r182 71m8 71r32
+20b5*IsReal{boolean} 52|37m11
+22R8*Request 25e13 52|26r11
+23r5*From{16R8} 52|39m9
+24r5*To{16R8} 52|40m9 42m9
+38Y11 Reset 52|41s38 43s38
+42a3*Torus(36T13) 52|41r11 43r11
+X 51 torusreset.ads
+3K9*TorusReset 10l5 10e15 52|8b14 74l5 74t15
+5U13*TorusReset 52|23b13 59l7 59t17
+7V12*GetFarthest{50|16R8} 7>25 7>40 7>54 8>5 52|35s12 63b12 73l7 73t18
+7r25 From{50|16R8} 52|63b25 69r27 70r27 71r27
+7i40 DX{integer} 52|63b40 69r51
+7i54 DY{integer} 52|63b54 70r51
+8i5 DZ{integer} 52|64b5 71r51
+X 52 torusreset.adb
+10i3 SEED1{integer} 29r23 46r44
+11i3 SEED2{integer} 29r30 46r73
+12i3 SEED3{integer} 29r37 46r102
+14i3 InitValue{integer}
+25r5 PE1{50|16R8} 31m5 32m5 33m5 35r24 40r15 41r17 41r24 41r31 50r46 50r69
+. 50r92 50r126 50r152 50r178
+25r10 PE2{50|16R8} 35m5 42r15 43r17 43r24 43r31 51r46 51r69 51r92 51r126
+. 51r152 51r178
+25r15 Dummy{50|16R8} 37m5 39r17
+26r5 Req{50|22R8} 39m5 40m5 41r44 42m5 43r44
+66r5 To{50|16R8} 69m5 70m5 71m5 72r12
+

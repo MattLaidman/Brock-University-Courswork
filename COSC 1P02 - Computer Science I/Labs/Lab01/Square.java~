@@ -1,0 +1,41 @@
+package Example_2_1;
+
+
+import Media.*;
+import static java.lang.Math.*;
+
+
+public class Square {
+    
+    
+    private TurtleDisplayer  display;
+    private Turtle           pen;
+    
+    
+    public Square ( ) {
+        
+        display = new TurtleDisplayer();
+        pen = new Turtle();
+        display.placeTurtle(pen);
+        
+        pen.setColor (red);
+        pen.penDown();
+        pen.forward(40);
+        pen.right(PI/2);
+        pen.forward(40);
+        pen.right(PI/2);
+        pen.forward(40);
+        pen.right(PI/2);
+        pen.forward(40);
+        pen.right(PI/2);
+        pen.penUp();
+        
+        display.close();
+        
+    };
+    
+    
+    public static void main ( String[] args ) { Square s = new Square(); };
+    
+    
+}

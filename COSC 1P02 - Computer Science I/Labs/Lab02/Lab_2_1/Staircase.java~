@@ -1,0 +1,37 @@
+package Lab_2_1;
+
+
+import Media.*;
+import static java.lang.Math.*;
+import static java.awt.Color.*;
+
+
+/** COSC 1P02 - Lab 02
+  *
+  * @version 1.0 (September 27, 2012)
+  * 
+  * @author <Matt Laidman>                                                         */
+
+public class Staircase {
+    
+    
+    turtle pen;
+    turtleDisplayer display;
+    
+    pen = new turtle pen;
+    display = new turtleDisplayer display
+    
+    
+    /** This constructor ...                                                    */
+    
+    public Staircase ( ) {
+        
+      for (int i = 1 ; i <
+        
+    }; // constructor
+    
+    
+    public static void main ( String[] args ) { Staircase s = new Staircase(); };
+    
+    
+} // Staircase

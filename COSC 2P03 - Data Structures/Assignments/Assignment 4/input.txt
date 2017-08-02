@@ -1,0 +1,7 @@
+Objective
+To implement a top down splay tree.
+The Assignment
+Implement a BST which has a String element and thus represents the Key as well; add an integer variable C which will represent the number of occurrences of the element. Your BST should support the following operations. Insert, Delete, Find and InOrder.  In the event of like elements you are to increment the count C field.
+The BST is to be implemented using top down splay operations. Recall from class that the splay rotations are very similar to the AVL rotations. Thus, you should be able to borrow the double and single rotations which you have implemented in A3. In addition,  you will need to implement the double single left and right which the splay operations require.
+Load the BST with the supplied data using the top down insert splay.  Print a SOT of this data (String element and count).
+Rescan the input data and remove every element from the tree which starts with a letter between (r - t or R - T inclusive). Print a SOT to verify that your tree is still in one piece and BST compliant.

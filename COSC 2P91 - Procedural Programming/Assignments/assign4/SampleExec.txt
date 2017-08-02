@@ -1,0 +1,83 @@
+matt@matt-gnome:~/Desktop/A4$ ./demo.sh 
+
+Scene files must be in the appropriate subfolders.
+See sample scene file, SampleScene.txt, or documentation.
+Images are saved to their respective subfolders.
+
+Select file to run:
+
+1. Colours test (Part One)
+2. Sillhouette (Part B)
+3. Full Scene (Part The Third)
+0. Quit
+
+1
+
+1. Create Colours
+0. Quit
+
+1
+
+Enter width: 500
+Enter height: 500
+# of threads: 8   
+Output Filename: PartOneSample.ppm
+
+1. Create Colours
+0. Quit
+
+0
+
+1. Colours test (Part One)
+2. Sillhouette (Part B)
+3. Full Scene (Part The Third)
+0. Quit
+
+2
+
+1. Make Sillhouette
+0. Quit
+
+1
+
+Enter width: 500
+Enter height: 500
+Enter scene file name: SampleScene.txt
+# of threads: 8
+Output Filename: PartBSample.ppm
+
+1. Make Sillhouette
+0. Quit
+
+0
+
+1. Colours test (Part One)
+2. Sillhouette (Part B)
+3. Full Scene (Part The Third)
+0. Quit
+
+3
+
+1. Make Scene
+0. Quit
+
+1
+
+Enter width: 500
+Enter height: 500
+Enter scene file name: SampleScene.txt
+# of threads: 8
+Output Filename: PartTheThirdSample.ppm
+
+1. Make Scene
+0. Quit
+
+0
+
+1. Colours test (Part One)
+2. Sillhouette (Part B)
+3. Full Scene (Part The Third)
+0. Quit
+
+0
+matt@matt-gnome:~/Desktop/A4$ 

@@ -1,0 +1,7 @@
+Objective
+To implement an AVL tree with deletion.
+The Assignment
+Implement a BST which has a String element and thus represents the Key as well; add an integer variable C which will represent the number of occurrences of the element. Your BST should support the following operations. Insert, Delete and InOrder. Each of the preceding operations should be implemented recursively where appropriate. In the event of like elements you are to increment the count C field.
+The BST should support AVL. Thus on every insertion or deletion should insure that the tree is AVL complaint. To help support this, write a method IsAVL() which will return a Boolean if the tree is or is not AVL.
+Load the BST with the supplied data. Print a SOT of this data (String  element and count). As well, run isAVL and print the result of this.
+Rescan the input data and remove ever element from the tree which starts with a letter between (d - n or D - N inclusive). Print a SOT and run isAVL as above.

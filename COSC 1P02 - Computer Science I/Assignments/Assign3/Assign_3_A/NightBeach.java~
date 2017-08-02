@@ -1,0 +1,38 @@
+package Assign_3_A;
+
+import Media.*;
+import java.awt.*;
+import static java.lang.Math.*;
+import static java.awt.Color.*;
+
+
+public class NightBeach {
+  
+  private Picture pic;
+  private PictureDisplayer display;
+  
+  
+  public NightBeach ( ) {
+    
+    pic = new Picture ();
+    display = new PictureDisplayer ();
+    display.placePicture (pic); 
+  };
+  
+  
+  private void darken () {
+    
+    Pixel x;
+    
+    while (pic.hasNext ()) {
+      x.getDistance (Color (58, 117, 197));
+      x.setRed (x.getRed ()*x.getDistance (Color (58, 117, 197)));
+      x.setGreen (x.getGreen ()*x.getDistance (Color (58, 117, 197)));
+      x.setBlue (x.getBlue ()*x.getDistance (Color (58, 117, 197))); 
+    }
+  };
+  
+  
+  public static void main ( String[] args ) {NightBeach n = new NightBeach();
+                                             n.darken ();                  };
+};

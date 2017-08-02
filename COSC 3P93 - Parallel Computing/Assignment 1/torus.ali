@@ -1,0 +1,196 @@
+V "GNAT Lib v4.9"
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_LOOPS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=4
+RV MAX_TASK_ENTRIES=3
+RV MAX_TASKS=1+
+
+U torus%b		torus.adb		813380fc OO PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.task_identification%s  a-taside.adb	a-taside.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_uns%s	s-imguns.adb		s-imguns.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U torus%s		torus.ads		2af6c1aa EE OO PK
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-reatim.ads		20090409150019 63f07669
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-taside.ads		20140124142722 68549ce6
+D a-textio.ads		20140129155348 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D i-cstrea.ads		20130412125801 8128536b
+D system.ads		20141210093300 90249111
+D s-atacco.ads		20120515093410 4c36d12f
+D s-conca3.ads		20140225151544 0b705ca5
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-imguns.ads		20090409150019 9ff43cf7
+D s-linux.ads		20140409145429 5b2f79a5
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20141210093300 a445b120
+D s-osinte.ads		20140409145429 59011f13
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-tasinf.ads		20120730151500 21316953
+D s-taspri.ads		20110927094500 15f617a8
+D s-taprop.ads		20111212143339 1dd2e1b6
+D s-taskin.ads		20140131154341 3f821f32
+D s-taprob.ads		20110927094500 502249e3
+D s-tpoben.ads		20121029113218 b641f948
+D s-tasren.ads		20120208100446 a67a9949
+D s-tassta.ads		20121029110946 70812003
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-wchcon.ads		20140225151139 1b7d22d2
+D torus.ads		20151023163447 2af6c1aa
+D torus.adb		20151023163512 fbfc2864
+X 1 ada.ads
+16K9*Ada 19e8 50|1r6 1r23 2r6 2r36
+X 8 a-taside.ads
+39K13*Task_Identification 77e28 50|2w10 2r40
+59U14*Abort_Task 50|47s9
+X 9 a-textio.ads
+49K13*Text_IO 471e16 50|1w10 1r27
+263U14*Put_Line 50|17s5 121s11
+X 33 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 49 torus.ads
+1K9*Torus 7E8 54l5 54e10 50|3b14 202l5 202t10
+3U13*DoReset 50|8b13 24l7 24t14
+7I8 Counter<short_short_integer> 50|61r15 62r17 63r16 64r18 121r128
+9M8 PX 14r9 32r18 50|35r20
+10M8 PY 15r9 32r22 50|36r22
+11M8 PZ 16r9 32r26 50|37r24
+13R8 PCoords 17e13 20r12 21r10 25r25 36r32 43r52 51r40 52r40 52r62 50|10r11
+. 30r19 44r40 58r19 59r18 60r16 73r33 134r40 163r40 163r62
+14m5*X{9M8} 50|19m9 47r38 91r26 114r47 121r52 122r29 144m19 144r38 145m19
+. 145r38 153r27 173r30 173r51 174m28 174r54 177r30 177r51 178m28 178r54
+15m5*Y{10M8} 50|20m9 47r53 91r38 114r78 121r80 122r44 146m19 146r38 147m19
+. 147r38 153r44 181r30 181r51 182m28 182r54 185r30 185r51 186m28 186r54
+16m5*Z{11M8} 50|21m9 47r68 91r50 114r109 121r108 122r59 148m19 148r38 149m19
+. 149r38 153r61 189r30 189r51 190m28 190r54 193r30 193r51 194m28 194r54
+19R8 ResRequest 22e13 26r24 50|66r22 84r32 137r11
+20r5*From{13R8} 50|86r27 111m26 151m11
+21r5*To{13R8} 50|85r27 112m26 152m11
+24T13 Processor 28l7 28e16 30r35 50|38r39 54b13 129l7 129t16
+25Y11 Reset 25>18 50|22s20 73b16 75l13 75t18
+25r18 Self{13R8} 50|74r23
+26Y11 Reset 26>18 50|84b16 87l13 87t18 114s112 153s64
+26r18 Req{19R8} 50|85r23 86r23
+27Y11 Acknowledge 50|91s53 101b16 105l13 105t24 122s62
+30P8 ProcessorAcc(24T13) 32r33
+32a3 Prism(30P8) 50|22r5 38m17 47r20 91r11 114r13 122r11 153r7
+34T13 TorusController 37l7 37e22 39r31 50|14r20 29b13 52l7 52t22
+35Y11 StartTorus 50|15s13 34b16 42l13 42t23
+36Y11 KillThis 36>21 50|44b16 46l13 46t21 123s19
+36r21 Location{13R8} 50|45r26
+39P8 TorusAcc(34T13) 40r13
+40p3 Control{39P8} 50|14m5 15r5 123r11
+42I8 NeighbourIndex<short_short_integer> 43r33 47r13 48r12 50|166r9
+43A8 NeighbourArray(13R8)<42I8> 46r14 50|136r18
+45R8 ResetBuffer 49e13 52r78 50|65r14 163r78 165r18
+46a5*Buffer{43A8} 50|112r39 114r26 114r57 114r88 170r25 171m18 173r20 174m18
+. 174r44 177r20 178m18 178r44 181r20 182m18 182r44 185r20 186m18 186r44 189r20
+. 190m18 190r44 193r20 194m18 194r44
+47i5*Front{42I8} 50|110r48 112r53 114r40 114r71 114r102 115m20 115r36
+48i5*Back{42I8} 50|110r64 197m16
+51U13 ResetSixNeighbours 51>33 50|80s9 134b13 156l7 156t25
+51r33 Self{13R8} 50|134b33 142r24 151r19
+52V12 ResetFiveNeighbours{45R8} 52>33 52>49 50|96s21 163b12 200l7 200t26
+52r33 Self{13R8} 50|163b33 171r31
+52r49 Originated{13R8} 50|163b49 173r40 177r40 181r40 185r40 189r40 193r40
+X 50 torus.adb
+10r5 Req{49|13R8} 19m5 20m5 21m5 22r26
+30r5 KillProcess{49|13R8} 45m11 47r26 47r41 47r56
+35m15 i{49|9M8} 38r23
+36m17 j{49|10M8} 38r26
+37m19 k{49|11M8} 38r29
+44r26 Location{49|13R8}
+56b5 IsReset{boolean} 77m9 89r12 93m11 102r14 110r12 120r12
+57b5 IsFirst{boolean} 76m9 110r28
+58r5 SavedCaller{49|13R8} 94m11 122r17 122r32 122r47
+59r5 TempSelf{49|13R8} 74m11 80r28 85m11 96r41 111r34 121r43 121r71 121r99
+. 123r28
+60r5 TempFrom{49|13R8} 86m11 91r17 91r29 91r41 94r26 96r51
+61i5 RecAcks{49|7I8} 103m13 103r24 120r25
+62i5 RecResets{49|7I8} 78m9 88m9 88r22 120r51
+63i5 SentAcks{49|7I8} 90m11 90r23 121r142
+64i5 SentResets{49|7I8} 79m9 95m11 120r35
+65r5 Buffer{49|45R8} 96m11 110r41 110r57 112r32 112r46 114r19 114r33 114r50
+. 114r64 114r81 114r95 115m13 115r29
+66r5 CurrentRequest{49|19R8} 111m11 112m11 114r118
+73r23 Self{49|13R8}
+84r23 Req{49|19R8}
+136a5 Neighbours{49|43A8} 141r14 142m7 144m5 144r24 145m5 145r24 146m5 146r24
+. 147m5 147r24 148m5 148r24 149m5 149r24 150r14 152r17 153r13 153r30 153r47
+137r5 Req{49|19R8} 151m7 152m7 153r70
+141i9 i<short_short_integer> 142r18
+150i9 i<short_short_integer> 152r28 153r24 153r41 153r58
+165r5 Neighbours{49|45R8} 170r14 171m7 173r9 174m7 174r33 177r9 178m7 178r33
+. 181r9 182m7 182r33 185r9 186m7 186r33 189r9 190m7 190r33 193r9 194m7 194r33
+. 197m5 198r12
+166i5 i{49|42I8} 173r27 174r25 174r51 175m7 175r12 177r27 178r25 178r51 179m7
+. 179r12 181r27 182r25 182r51 183m7 183r12 185r27 186r25 186r51 187m7 187r12
+. 189r27 190r25 190r51 191m7 191r12 193r27 194r25 194r51 195m7 195r12
+170i9 j<short_short_integer> 171r25
+

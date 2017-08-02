@@ -1,0 +1,27 @@
+matt@arch-asus ~/D/LabExercise06> g++ -Wall -o settest Set.cpp SetTest.cpp 
+matt@arch-asus ~/D/LabExercise06> ./settest
+Capacity of A [0..255]: 10
+A ("{x,y,z}"): {1,2,3}
+Capacity of B: 10
+B: {1,2,3}
+Capacity of C: 10
+C: {1,2,3}
+
+A: {1,2,3}
+B: {1,2,3}
+C: {1,2,3}
+
+A<=B: 1
+A<B: 0
+A>=B: 1
+A>B: 0
+
+A+B: {1,2,3}
+A^B: {1,2,3}
+A-B: {}
+(A+B)-C: {}
+C-(A+B): {}
+~A: {0,4,5,6,7,8,9}
+~(A-B): {0,1,2,3,4,5,6,7,8,9}
+U^A: {1,2,3}
+matt@arch-asus ~/D/LabExercise06> 

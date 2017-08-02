@@ -1,0 +1,70 @@
+package Assign_3_C;
+
+import Media.*;
+import java.awt.*;
+import static java.lang.Math.*;
+import static java.awt.Color.*;
+
+
+public class EdgeDetection {
+  
+  private Picture pic;
+  private PictureDisplayer display;
+  private double TOLERANCE = 10.0;
+  
+  
+  public EdgeDetection ( ) {
+    
+    pic = new Picture ();
+    display = new PictureDisplayer ();
+    display.placePicture (pic);
+    display.waitForUser ();
+  };
+  
+  
+    private void edge () {
+      
+      Pixel[][] x;
+      x = new Pixel[pic.getWidth ()][pic.getHeight ()];
+      Color c;
+      double i, i2;
+      
+      for (int j = 1 ; j < pic.getWidth () ; j++) {
+        for (int k = 1 ; k < pic.getHeight () ; k++) {
+          x[j][k] = pic.next ();
+        }
+      }
+      
+      for (int j = 1 ; j < pic.getWidth () ; j++) {
+        for (int k = 1 ; k < pic.getHeight () ; k++) {
+          c = x[j][k].getColor ();
+          i = intensity (c);
+          if ((k+1) >= pic.getHeight ()) {
+            i2 = i;
+          } else {
+            c = x[j][k+1].getColor ();
+            i2 = intensity (c);
+          }
+          if (abs (i - i2) < TOLERANCE) {
+            x[j][k].setColor (white);
+          } else {
+            x[j][k].setColor (black);  
+          }
+        }
+      }
+  };
+  
+  
+  private double intensity (Color c) {
+    
+    double intensity;
+    intensity = ((c.getRed () + c.getGreen () + c.getBlue ()) / 3);
+    return intensity;
+  };
+  
+  
+  public static void main ( String[] args ) {
+    EdgeDetection e = new EdgeDetection();
+    e.edge ();                 
+  };
+};

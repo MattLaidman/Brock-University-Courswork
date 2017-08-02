@@ -1,0 +1,40 @@
+package Lab_6_3;
+
+
+import Media.*;
+import BasicIO.*;
+import java.lang.Math.*;
+
+public class RepeatSound {
+  
+  SoundPlayer  player;
+  static Sound aSound;
+  
+  
+  public RepeatSound ( ) {
+    
+    aSound = new Sound();
+    player = new SoundPlayer();
+    player.placeSound (aSound);
+    
+  };
+  
+  
+  private void repeat (Sound aSound, int nTimes) {
+    
+    Sample s;
+    
+    for (int i = 1 ; i <= nTimes ; i++) {
+
+    }
+  };
+  
+  
+  public static void main ( String[] args ) {
+    
+    RepeatSound r = new RepeatSound();
+    r.repeat(aSound, 3);
+  };
+  
+  
+}

@@ -1,0 +1,9 @@
+Objective
+ Build and traverse a Binary Search tree using several traversal methods.
+The Assignment
+Implement a BST which has a String element and thus represents the Key as well; add an integer variable C which will represent the number of occurrences (count) of the element. Load the BST with the provided data. When a duplicate (element already in the BST) is encountered, increment the counter. Once done, run the following traversals in the following order. Verify that each traversal is correct by comparing it to previous output. 
+a).    Recursive, Pre-Order, In-Order and Post-Order traversal
+b).    Implement the iterative In-Order Traversal, using Stacks.
+c).     Run the recursive In-Order again to verify the tree is still intact.
+
+Output should consist of the word followed by the number of occurrences.
